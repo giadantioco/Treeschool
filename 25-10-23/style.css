@@ -1,0 +1,71 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+/* margin e padding sempre a 0 per avere piu controllo sugli elementi */
+li {
+    list-style-type: none;
+}
+main {
+    min-height: 80vh;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+/* GAP 20px */
+.image1 {
+    border: 10px solid rgb(238, 17, 164);
+    width: 60px;
+    margin-left: 20px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+/* GAP 20px */
+.navbar {
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center; 
+}
+.link {
+    background-color: #6df834;
+    transition: color 0.3s;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.link:hover {
+    cursor: pointer;
+    color: rgb(155, 155, 222);
+}
+.module {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+/* when FLEX-DIRECTION get changed 
+we use align-items instead of justify-content */
+.submit {
+    width: fit-content; 
+    padding: 10px;
+    background-color: yellowgreen;
+    border: none;
+    transition: transform 0.5s;
+}
+.submit:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    border-top: 3px solid grey;
+    padding-top: 10px
+}
