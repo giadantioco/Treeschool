@@ -1,0 +1,136 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+/* margin e padding sempre a 0 per avere piu controllo sugli elementi */
+li {
+    list-style-type: none;
+}
+main {
+    min-height: 80vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+body {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+}
+/* media queries
+ */
+ @media screen and (min-width: 480px) {
+    body {
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    }
+    /* non capisco perche nn funziona! */
+    .container {
+        border: none;
+    }
+    /*  */
+}
+@media screen and (min-width: 768px) {
+    body {
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(202,219,25,1) 0%, rgba(126,39,219,1) 0%, rgba(96,235,46,1) 0%, rgba(109,248,52,1) 30%, rgba(127,67,234,0.6180847338935574) 70%, rgba(0,212,255,1) 100%);
+    }
+}
+/* 
+ */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+/* GAP 20px */
+.image1 {
+    border: 10px solid rgb(238, 17, 164);
+    width: 60px;
+    margin-left: 20px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+/* GAP 20px */
+.navbar {
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+.link {
+    background-color: #6df834;
+    transition: color 0.3s;
+    border: 10px solid rgb(238, 17, 164);
+    border-radius: 10px;
+    padding: 10px;
+}
+.link:hover {
+    cursor: pointer;
+    color: rgb(155, 155, 222);
+}
+.module {
+    border: 10px solid rgb(155, 155, 222);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 20px;
+    width: 50%;
+    border-radius: 20px;
+}
+/* when FLEX-DIRECTION get changed 
+we use align-items instead of justify-content */
+.submit {
+    border-radius: 10px;
+    width: fit-content; 
+    padding: 10px;
+    background-color: rgb(129, 4, 88);
+    color: white;
+    border: none;
+    transition: transform 0.5s;
+}
+.submit:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table {
+    display: flex;
+}
+/* 
+main below
+ */
+ .book, .gym, .outdoor {
+    width: 300px;
+    border: 5px solid greenyellow;
+    border-radius: 20px;
+ }
+.container {
+    border: 10px solid rgb(129, 4, 88);
+    border-radius: 20px;
+    width: 50%;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer {
+    border-top: 3px solid grey;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

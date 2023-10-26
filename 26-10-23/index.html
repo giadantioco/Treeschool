@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="style.css" rel="stylesheet"/>
+    <title>Progetto Hero Section</title>
+</head>
+
+    <!-- sezione header -->
+<body>
+    <header class="header">
+        <img class="image1" src="https://api.freelogodesign.org/assets/thumb/logo/a17b07eb64d341ffb1e09392aa3a1698_400.png" alt="logo">
+        <nav class="navbar">
+            <li class="link">Home</li>
+            <li class="link">About</li>
+            <li class="link">Contacts</li>
+        </nav>
+    </header>
+
+    <!-- sezione main -->
+
+    <main>
+        <form class="module">
+            <div class="table">
+                <label for="name">Nome: </label> 
+                <input name="name" id="name" type="text" placeholder="Inserisci nome qui" required>
+            </div>
+            <div class="table">
+                <label for="surname">Cognome: </label> 
+                <input name="surname" id="surname" type="text" placeholder="Inserisci coognome qui" required>
+            </div>
+            <div class="table">
+                <label for="age">Data di nascita: </label> 
+                <input name="age" id="age" type="date" placeholder="Inserisci data di nascita" required>
+            </div>
+            <div class="table">
+                <label for="password">Password: </label>   
+                <input type="password" type="password" value="password" required>
+            </div class="table">
+            <button class="submit" type="submit">INVIA</button>
+        </form>
+
+        <div class="container">
+            <div class="div-book">
+                <img class="book" src="./images/book.jpg" alt="book"/>    <p>Read and Relax</p>
+            </div class="div">
+            <div>
+                <img class="gym" src="./images/gym.jpg" alt="gym"/>
+                <p>Gym and Pool</p>
+            </div>
+            <div>
+                <img class="outdoor" src="./images/outdoor.jpg" alt="outdoor"/>
+                <p>Oudoor Walks</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- sezione footer -->
+
+    <footer class="footer"> 
+            <li class="">
+                <a href="https://www.instagram.com/">
+                    <img src="./images/bxl-instagram.svg" alt="instagramlogo"/></a>
+            </li>
+            <li class="">
+                <a href="https://www.facebook.com/?locale=it_IT">
+                    <img src="./images/bxl-facebook.svg" alt="facebook logo"/>
+                </a>
+            </li>
+            <li class="">
+                <a href="https://twitter.com/?lang=it">
+                    <img src="./images/bxl-twitter.svg" alt="twitter-logo"/>
+                </a>
+            </li>
+    </footer>
+</body>
+</html>
