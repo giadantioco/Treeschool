@@ -1,0 +1,63 @@
+@import "./variables.scss";
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body {
+    background-color: $dark-color;
+}
+// 
+.header {
+    font-family: $font-stack;
+    @include flex;
+    justify-content: space-between;
+    width: 100%;
+    background: $light-color;
+    padding: 10px;
+
+    .giada {
+        color: $dark-color;
+        width: 40%;
+        text-align: center;
+        font-size: 50px;
+    }
+    .navbar {
+        @include flex;
+        justify-content: space-between;
+        gap: 20px;
+        li {
+            @include btn;
+        }
+    }
+}
+// 
+.hero {
+    @include flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+    border-bottom: 2px solid $light-color;
+    .main-text {
+        padding: 20px;
+        font-size: 60px;
+        color: $light-color;
+        font-family: $font-stack;
+    }
+    .second-text {
+        width: 50%;
+        padding: 20px;
+        font-size: 40px;
+        text-align: center;
+        color: $light-color;
+        font-family: $font-stack;
+    }
+    .btn-fun {
+        @include btn;
+        margin-top: 10px;
+    }
+}
+// finire il footer
