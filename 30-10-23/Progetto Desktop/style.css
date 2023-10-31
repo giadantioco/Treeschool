@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #04364A;
+}
+
+.header {
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #DAFFFB;
+  padding: 10px 15px;
+  position: fixed;
+}
+.header .giada {
+  color: #04364A;
+  width: 40%;
+  text-align: center;
+  font-size: 50px;
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.header .navbar li {
+  background-color: #04364A;
+  color: #DAFFFB;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px #64CCC5;
+  transition: transform 0.5s;
+}
+.header .navbar li:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  border-bottom: 2px solid #DAFFFB;
+}
+.hero .main-text {
+  padding: 20px;
+  font-size: 60px;
+  color: #DAFFFB;
+  font-family: "Roboto Mono", monospace;
+}
+.hero .second-text {
+  width: 50%;
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  color: #DAFFFB;
+  font-family: "Roboto Mono", monospace;
+}
+.hero .btn-fun {
+  background-color: #04364A;
+  color: #DAFFFB;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px #64CCC5;
+  transition: transform 0.5s;
+  margin-top: 10px;
+}
+.hero .btn-fun:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container .icons ul {
+  display: flex;
+  gap: 15px;
+}
+.container .words {
+  width: 80%;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  color: #DAFFFB;
+  text-align: end;
+}
+
+.copyright {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  color: #DAFFFB;
+  font-size: 14px;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */

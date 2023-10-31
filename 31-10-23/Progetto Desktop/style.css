@@ -17,13 +17,25 @@ body {
   justify-content: space-between;
   width: 100%;
   background: #DAFFFB;
-  padding: 10px;
+  padding: 10px 15px;
+  position: fixed;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    background-color: #04364A;
+  }
 }
 .header .giada {
   color: #04364A;
   width: 40%;
   text-align: center;
   font-size: 50px;
+}
+@media screen and (max-width: 768px) {
+  .header .giada {
+    color: #DAFFFB;
+  }
 }
 .header .navbar {
   display: flex;
@@ -43,6 +55,16 @@ body {
   transform: scale(1.2);
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .header .navbar li {
+    background-color: #DAFFFB;
+    color: #04364A;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px #64CCC5;
+    transition: transform 0.5s;
+  }
+}
 
 .hero {
   display: flex;
@@ -50,14 +72,26 @@ body {
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  min-height: 70vh;
+  min-height: 100vh;
   border-bottom: 2px solid #DAFFFB;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-top: 200px;
+  }
 }
 .hero .main-text {
   padding: 20px;
   font-size: 60px;
   color: #DAFFFB;
   font-family: "Roboto Mono", monospace;
+  padding-top: 200px;
+}
+@media screen and (max-width: 768px) {
+  .hero .main-text {
+    padding-top: 200px;
+    text-align: center;
+  }
 }
 .hero .second-text {
   width: 50%;
@@ -79,4 +113,42 @@ body {
 .hero .btn-fun:hover {
   transform: scale(1.2);
   cursor: pointer;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.icons ul {
+  display: flex;
+  gap: 15px;
+}
+
+.words {
+  width: 80%;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  color: #DAFFFB;
+  text-align: end;
+}
+
+.copyright {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  color: #DAFFFB;
+  font-size: 14px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

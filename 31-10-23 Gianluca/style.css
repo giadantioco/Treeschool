@@ -1,0 +1,235 @@
+/* regole relative ai TAG HTML */
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #5B0888;
+    color: #FFFBF5;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100%;
+}
+/* line height: distanza tra righe testo */
+h1 {
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 113px;
+}
+h2 {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 75px;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 56px;
+}
+h1, h2, h3 {
+    margin-bottom: 48px;
+}
+a {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    color: #FFFBF5;
+    text-decoration: none;
+    /* text-transform: capitalize; Trasforma la prima lettera maiuscola */
+    text-transform: uppercase;
+}
+a:hover {
+    color: #F0B86E;
+}
+section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.btn {
+    background-color: #F0B86E;
+    color: #FFFBF5;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 36px;
+}
+.btn:hover {
+    background-color: #EBE76C;
+    color: #5B0888;
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+/* per centrare il div... SENZA FLEXBOX! */
+
+/* CSS */
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+}
+/* hero */
+.hero {
+    height: 100vh;
+    background: rgb(91,8,136);
+    background: linear-gradient(0deg, rgba(91,8,136,1) 0%, rgba(12,2,83,1) 100%);
+}
+.hero-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-cta {
+    align-self: flex-end;
+}
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(91,8,136);
+    background: linear-gradient(180deg, rgba(91,8,136,1) 0%, rgba(12,2,83,0.16430322128851538) 100%);
+}
+.header-container {
+    display: flex;
+}
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-right: 64px;
+}
+/* navbar */
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+/* figlio diretto di  */
+.menu ul li {
+    margin-right: 24px;
+}
+.menu ul li a {
+    font-size: 24px;
+}
+.works-menu ul {
+    list-style-type: none;
+    display: flex;
+}
+.works-menu ul li {
+    margin-right: 24px;
+}
+
+/*  */
+
+.works-item {
+    margin-bottom: 96px;
+}
+
+.works-item-tags {
+    font-size: 24px;
+    color: #EBE76C;
+}
+
+/*  */
+.work-info {
+    display: flex;
+}
+.work-info-label {
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* dimensione vincolata 200px, non deve crescere al crescere della pagina (flex-grow: 0), mentre le dimensioni dell-elemento si possono ristringere allo stringimento della pagina (flex-shrink: 1) */
+.work-info-content {
+    width: 70%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+/* si allarga e si rimpicciolisce quando le dimensioni della pagina variano */
+
+/*  */
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images img {
+    margin-bottom: 36px;
+}
+
+/* classi per allineare elementi (align-self) */
+.img-right {
+    align-self: flex-end;
+}
+.img-left {
+    align-self: flex-start;
+}
+
+/*  */
+.contacts-content {
+    display: flex;
+    justify-content: space-between;
+}
+/* riduciamo larghezza e diamo spazio centrale, non si possono ingrandire ma possono rimpicciolire */
+
+.contacts-about, .contacts-form {
+    width: 40%;
+    /* rimane 20% di spazio da gestire */
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+/* FORM */
+
+.input-label {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.input-field {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: #757575;
+    background-color: #EBE76C;
+    padding: 12px 16px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.input-textarea {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: #757575;
+    background-color: #EBE76C;
+    padding: 12px 16px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    height: 100px;
+}
+.input-label span {
+    font-size: 18px;
+    font-weight: 400px;
+}

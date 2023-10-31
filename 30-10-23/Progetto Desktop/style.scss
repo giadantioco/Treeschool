@@ -16,7 +16,9 @@ body {
     justify-content: space-between;
     width: 100%;
     background: $light-color;
-    padding: 10px;
+    padding: 10px 15px;
+    position: fixed;
+    
 
     .giada {
         color: $dark-color;
@@ -39,7 +41,7 @@ body {
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    min-height: 70vh;
+    min-height: 100vh;
     border-bottom: 2px solid $light-color;
     .main-text {
         padding: 20px;
@@ -61,3 +63,31 @@ body {
     }
 }
 // finire il footer
+.container {
+    @include flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .icons ul {
+        display: flex;
+        gap: 15px;
+    }
+    .words {
+        width: 80%;
+        font-family: $font-stack;
+        font-size: 30px;
+        color: $light-color;
+        text-align: end;
+    }
+}  
+.copyright {
+    text-align: center;
+    font-family: $font-stack;
+    color: $light-color;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
