@@ -1,0 +1,74 @@
+{
+  "productsList": [
+    {
+      "id": 1,
+      "name": "Smartphone XYZ",
+      "price": 599.99,
+      "description": "Il nostro smartphone di punta con display OLED, fotocamera avanzata e prestazioni elevate.",
+      "stock": 50
+    },
+    {
+      "id": 2,
+      "name": "Laptop ABC",
+      "price": 899.99,
+      "description": "Un laptop leggero e potente con processore veloce, schermo ad alta risoluzione e lunga durata della batteria.",
+      "stock": 30
+    },
+    {
+      "id": 3,
+      "name": "Cuffie Wireless XYZ",
+      "price": 129.99,
+      "description": "Cuffie senza fili con cancellazione del rumore, design confortevole e qualità audio premium.",
+      "stock": 20
+    },
+    {
+      "id": 4,
+      "name": "Fotocamera DSLR ABC",
+      "price": 1499.99,
+      "description": "Una fotocamera digitale reflex con sensori avanzati, molte opzioni di scatto e registrazione video in 4K.",
+      "stock": 15
+    },
+    {
+      "id": 5,
+      "name": "Smartwatch XYZ",
+      "price": 199.99,
+      "description": "Un orologio intelligente con monitoraggio fitness, notifiche intelligenti e resistenza all'acqua.",
+      "stock": 40
+    },
+    {
+      "id": 6,
+      "name": "Altoparlante Bluetooth ABC",
+      "price": 79.99,
+      "description": "Altoparlante portatile con connessione Bluetooth, batteria a lunga durata e suono di alta qualità.",
+      "stock": 10
+    },
+    {
+      "id": 7,
+      "name": "Tablet XYZ",
+      "price": 349.99,
+      "description": "Un tablet versatile con schermo touch, potente processore e ampia capacità di archiviazione.",
+      "stock": 25
+    },
+    {
+      "id": 8,
+      "name": "Mouse Wireless ABC",
+      "price": 29.99,
+      "description": "Mouse senza fili con design ergonomico, pulsanti programmabili e precisione del cursore.",
+      "stock": 60
+    },
+    {
+      "id": 9,
+      "name": "Stampante XYZ",
+      "price": 149.99,
+      "description": "Stampante multifunzione con stampa a colori, scansione e copia, connessione Wi-Fi e stile compatto.",
+      "stock": 5
+    },
+    {
+      "id": 10,
+      "name": "Videocamera Sportiva ABC",
+      "price": 129.99,
+      "description": "Videocamera compatta per attività sportive con registrazione video ad alta definizione e resistenza all'acqua.",
+      "stock": 35
+    }
+  ]
+}
