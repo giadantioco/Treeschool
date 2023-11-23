@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name;
+        name = "Bob";
+
+        var age = 35;
+        var isStudent = true;
+
+        // let and conts
+        let age = 35; 
+        // varia
+        const sex = "male";
+        // non varia
+
+        // stringhe
+        let name = "Giada";
+        let name = 'Luca';
+
+        // numero
+        let age = 35;
+
+        // Undefined = variabile dichiarata ma nn inizializzata
+        var myNumber;
+
+        //  null
+        let myName = null;
+
+        // booleano
+        let isStudent = true;
+        let isProfessor = false;
+
+        // BigInt! 
+        let myBigIntNumber = 6444546546547469;
+
+        // le FUNZIONI
+
+        function sum(numA, numB) {
+            return numA + numB;
+        }
+        
+        // funzione che controlla se un numero e' maggiore o uguale a  
+
+        function greaterOrEqualTo(numA, numB) {
+            return numA >= numB;
+        }
+        greaterOrEqualTo(6,4);
+
+        // funzione che controlla se un numero e' divisibile per il secondo
+
+        function divisionNoModulus(numA, numB) {
+            return numA / numB;
+        }
+        divisionNoModulus(8,2)
+
+        // funzione che controlla se un numero e' divisibile per il secondo, senza resto, e trasforma il risultato in una variabile
+
+        function isDivisible(numA, numB) {
+            let modulus = numA % numB
+            return modulus === 0;
+        }
+
+
+        // funzione che controlla se un numero e' pari
+
+        function numEven(numA) {
+            const resto = numA % 2;
+            return resto === 0
+        }
+
+
+        function isNotUniven(number){
+            if (isNaN(number) == true)
+            {
+                return (number %2 == 1 ? true : false);
+            }
+            else
+            {
+                return null;
+            }
+        }
+        console.log(isNotUniven(1));
+        console.log(isNotUniven(2));
+
+        // it's up to you...
+        if (youWant() === true) {
+            youCan();
+        } else {youCant();}
+
+        // fatta da me 
+
+        const myFirstObject = {
+            Giada: {
+            age: 33;
+        },
+            Hobbies: [
+            {name: drone, from: 2}
+        ],
+        myFavouriteBook: {
+            name: "The Innocent",
+            pages: 33,
+            isLiked: return false;
+            }
+        }
+</script>
+</body>
+</html>

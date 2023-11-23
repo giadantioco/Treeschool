@@ -17,10 +17,14 @@ console.log(products.productsList);
 console.log(products.productsList[2]);
 console.log(products.productsList.filter((prod) => prod.price < 200));
 console.log(products.productsList.find((prod) => prod.id === 8));
+products.productsList.map((prod) => {
+    if (prod.id === 8) {
+        console.log(prod);
+    }
+});
 console.log(products.productsList.map((prod) => prod.name));
 
 // esercizi extra
-
 
 console.log(products.productsList.find((prod) => prod.id === 9));
 
@@ -30,6 +34,7 @@ if (moreInStock.length > 0) {
 } else {
     console.log("No products with more than 30 in stock")
 }
+
 
 
 

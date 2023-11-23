@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="16-11-23.js"></script>
+    </head>
+    <!-- <style>
+        .elemento {
+          width: 200px;
+          height: 100px;
+          background-color: lightgray;
+          margin-bottom: 10px;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="elemento" onmouseover="cambiaColore(this)" onmouseout="ripristinaColore(this)"></div>
+      <div class="elemento" onmouseover="cambiaColore(this)" onmouseout="ripristinaColore(this)"></div>
+      <div class="elemento" onmouseover="cambiaColore(this)" onmouseout="ripristinaColore(this)"></div>
+      <div class="elemento" onmouseover="cambiaColore(this)" onmouseout="ripristinaColore(this)"></div>
+    
+      <script>
+        function cambiaColore(elemento) {
+          elemento.style.backgroundColor = "blue";
+        }
+    
+        function ripristinaColore(elemento) {
+          elemento.style.backgroundColor = "lightgray";
+        }
+      </script>
+    </body> -->
+
+    <!-- <style>
+        .change-color {
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+    <body>
+        <div id="divRed" class="change-color">Change to Red</div>
+        <div id="divBlue" class="change-color">Change to Blue</div>
+        <div id="divGreen" class="change-color">Change to Green</div>
+
+        <script>
+            let divRed = document.getElementById("divRed");
+            let divBlue = document.getElementById("divBlue");
+            let divGreen = document.getElementById("divGreen");
+
+            divRed.onmouseover = function() {
+                divRed.style.backgroundColor = 'red';
+            };
+
+            divRed.onmouseout = function() {
+                divRed.style.backgroundColor = '';
+            };
+
+            divBlue.onmouseover = function() {
+                divBlue.style.backgroundColor = 'blue';
+            };
+
+            divBlue.onmouseout = function() {
+                divBlue.style.backgroundColor = '';
+            };
+
+            divGreen.onmouseover = function() {
+                divGreen.style.backgroundColor = 'green';
+            };
+
+            divGreen.onmouseout = function() {
+                divGreen.style.backgroundColor = '';
+            };
+        </script>
+    </body> -->
+
+        <!-- 
+        2. Crea una pagina HTML con un pulsante e un contatore inizialmente impostato a zero.
+        Implementa la logica JavaScript per incrementare il valore del contatore ogni volta che il pulsante viene cliccato. -->
+    <body>
+        <!-- <p>Counting with a local variable.</p>
+        <button type="button" onclick="myFunction()">click me</button>
+        <p id="demo">0</p> -->
+
+        <!-- 
+        3. Crea una pagina HTML con una lista di numeri.
+        Aggiungi due pulsanti: uno per ordinare i numeri in ordine crescente e un altro per ordinarli in ordine decrescente.
+        Implementa la logica JavaScript per ordinare dinamicamente i numeri quando i pulsanti vengono cliccati. 
+        -->
+        <!-- <h1>Sorting Numbers</h1>
+        <ul id="numberList">
+            <li>9</li>
+            <li>3</li>
+            <li>7</li>
+            <li>1</li>
+            <li>5</li>
+        </ul>
+        <button id="sortAscending">Sort Ascending</button>
+        <button id="sortDescending">Sort Descending</button>
+
+        <script>
+            let add = (function () {
+              let counter = 0;
+              return function () {return counter += 1;}
+            })();
+            
+            function myFunction(){
+              document.getElementById("demo").innerHTML = add();
+            }
+
+            let numberList = document.getElementById("numberList");
+            let sortAscendingButton = document.getElementById("sortAscending");
+            let sortDescendingButton = document.getElementById("sortDescending");
+
+            sortAscendingButton.addEventListener('click', function() {
+                sortNumbers(true);
+            });
+
+            sortDescendingButton.addEventListener('click', function() {
+                sortNumbers(false);
+            });
+
+            function sortNumbers(ascending) {
+                let numbers = Array.from(numberList.children);
+                
+                numbers.sort(function(a, b) {
+                    let numberA = parseInt(a.innerText);
+                    let numberB = parseInt(b.innerText);
+
+                    if (ascending) {
+                        return numberA - numberB;
+                    } else {
+                        return numberB - numberA;
+                    }
+                });
+
+                numbers.forEach(function(number) {
+                    numberList.appendChild(number);
+                });
+            }
+            </script> -->
+            <button id="button" onclick="effettuaChiamataGET()">Clicca</button>
+            <div id="risultatoGET">
+            </div>
+            <form onsubmit="login()">
+            USER <input type="text" id="name">
+            PASSWORD <input type="text" id="password">
+            <input type="submit" id="submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="esSix">
+        <form id="searchForm">
+          <input id="author" placeholder="Search for an author" />
+          <button type="submit">Go!</button>
+        </form>
+  
+        <form id="addForm">
+          <label
+            >Book's title:<input name="addBook" id="addBook" required
+          /></label>
+          <label
+            >Author's name <input name="addAuthor" id="addAuthor" required
+          /></label>
+          <label
+            >Publishing Date<input name="addPubDate" id="addPubDate" required
+          /></label>
+          <label
+            >Pages<input name="addChapters" id="addChapters" required
+          /></label>
+          <button type="submit">Go!</button>
+        </form>
+  <form id="deleteForm">
+          <select id="deleteBook" required>
+            <option id="defaultBook">Choose a book</option>
+          </select>
+          <select id="deleteAuthor" required>
+            <option id="defaultAuthor">Choose an author</option>
+          </select>
+          <button type="submit">Go!</button>
+        </form>
+        <table>
+            <thead>
+              <tr>
+                <th colspan="4">Personal library</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <tr id="head">
+                <td>Title</td>
+                <td>Author</td>
+                <td>Publishing Date</td>
+                <td>Pages</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+    <script src="14-11-23.js"></script>
+</body>
+</html>
